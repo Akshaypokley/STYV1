@@ -30,7 +30,7 @@ public class BasicTest {
         List<WebElement>MenuList=driver.findElements(By.cssSelector(".data-original-title"));
         for(WebElement getwe:MenuList)
         {
-            String getTitle=getwe.getCssValue("value");
+            String getTitle=getwe.getAttribute("value");
             System.out.println(getTitle);
         }
 
